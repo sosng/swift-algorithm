@@ -41,7 +41,7 @@ extension Stack: Sequence {
     }
 }
 
-
+/*
 var s = Stack<Int>()
 
 for i in 0...10 {
@@ -58,3 +58,4 @@ for _ in 0...10 {
 
 
 
+*/
