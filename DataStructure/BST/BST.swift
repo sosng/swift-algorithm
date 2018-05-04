@@ -153,7 +153,43 @@ extension BinarySearchTree {
             return self
         }
     }
-   
+    
+    func minimun() -> BinarySearchTree {
+        var node = self
+        while let next = node.left {
+            node = next
+        }
+        return node
+    }
+    
+    func maximum() -> BinarySearchTree {
+        var node = self
+        while let next = node.right {
+            node = next
+        }
+        return node
+    }
+    
+    func traverseInOrder(process: (T) -> Void) {
+        left?.traverseInOrder(process: process)
+        process(value)
+        right?.traverseInOrder(process: process)
+    }
+    
+    func map(transform: (T) -> T) -> [T] {
+        var a = [T]()
+        if let left = left {
+            a += left.map(transform: transform)
+        }
+        a.append(transform(value))
+        if let right = right {
+            a += right.map(transform: transform)
+        }
+    }
+    
+    func reverse() {
+        
+    }
     
 }
 
