@@ -170,6 +170,45 @@ extension BinarySearchTree {
         return node
     }
     
+//   Deleting nodes
+    
+    private func reconnectParentTo(node: BinarySearchTree?) {
+        if let parent = parent {
+            if isLeftChild {
+                parent.left = node
+            } else {
+                parent.right = node
+            }
+        }
+        node?.parent = parent
+    }
+    
+    @discardableResult public func remove() -> BinarySearchTree? {
+        var replacement: BinarySearchTree?
+        
+        if let right = right {
+            replacement = right.minimun()
+        } else if let left = left {
+            replacement = left.maximum()
+        } else {
+            replacement = nil
+        }
+        
+        replacement?.remove()
+        
+        replacement?.right = right
+        replacement?.left = left
+        right?.parent = replacement
+        left?.parent = replacement
+        
+        reconnectParentTo(node: replacement)
+        
+        parent = nil
+        left = nil
+        right = nil
+        return replacement
+    }
+    
     func traverseInOrder(process: (T) -> Void) {
         left?.traverseInOrder(process: process)
         process(value)
@@ -185,11 +224,28 @@ extension BinarySearchTree {
         if let right = right {
             a += right.map(transform: transform)
         }
+        return a
     }
     
-    func reverse() {
-        
+    func hegiht() -> Int {
+        if isLeaf {
+            return 0
+        } else {
+            return 1 + max(left?.hegiht() ?? 0, right?.hegiht() ?? 0)
+        }
     }
+    
+    func depth() -> Int {
+        var node = self
+        var edges = 0
+        while let parent = node.parent {
+            edges += 1
+            node = parent
+        }
+        return edges
+    }
+    
+    
     
 }
 
