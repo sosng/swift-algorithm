@@ -15,5 +15,5 @@ print(t)
 
 print("============")
 let e = t.search(value: 10)
-e?.remove()
-print(t)
+let r = e?.predecessor()
+print(r)

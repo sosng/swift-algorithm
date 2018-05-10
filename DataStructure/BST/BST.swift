@@ -245,6 +245,35 @@ extension BinarySearchTree {
         return edges
     }
     
+    func predecessor() -> BinarySearchTree<T>? {
+        if let left = left {
+            return left.maximum()
+        } else {
+            var node = self
+            while let parent = node.parent {
+                if parent.value < value {
+                    return parent
+                }
+                node = parent
+            }
+            return nil
+        }
+    }
+    
+    func successor() -> BinarySearchTree<T>? {
+        if let right = right {
+            return right.minimun()
+        } else {
+            var node = self
+            while let parent = node.parent {
+                if parent.value > value {
+                    return parent
+                }
+                node = parent
+            }
+            return nil
+        }
+    }
     
     
 }
