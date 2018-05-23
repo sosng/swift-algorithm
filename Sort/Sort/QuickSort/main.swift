@@ -60,7 +60,7 @@ func partitionLomuto<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int 
     let pivot = a[high]
     var i = low
     for j in low..<high {
-        if a[j] <= pivot {
+        if a[j] < pivot {
             (a[i], a[j]) = (a[j], a[i])
             i += 1
         }
@@ -81,6 +81,7 @@ func quickSortLumuto<T: Comparable>(_ a: inout [T], low: Int, high: Int) {
     }
 }
 
+//https://my.oschina.net/albert2011/blog/785604
 func partitionHoare<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int {
     
     let pivot = a[low]
@@ -97,8 +98,16 @@ func partitionHoare<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int {
     }
 }
 
+func quicksortHoare<T: Comparable>(_ a: inout [T], low: Int, high: Int) {
+    if low < high {
+        let p = partitionHoare(&a, low: low, high: high)
+        quicksortHoare(&a, low: low, high: p)
+        quicksortHoare(&a, low: p + 1, high: high)
+    }
+}
+
 var list = [ 10, 0, 3, 9, 2, 14, 8, 27, 1, 5, 8, -1, 26 ]
-quickSortLumuto(&list, low: 0, high: list.count - 1)
+quicksortHoare(&list, low: 0, high: list.count - 1)
 print("re: \(list)")
 
 
