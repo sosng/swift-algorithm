@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//O(n log n)
 print("Hello, World!")
 
 func quickSort0< T: Comparable>(_ arr: [T]) -> [T] {
