@@ -22,6 +22,11 @@ public class ListNode {
  
 class Solution {
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var r = ListNode(0)
+        let sum = (l1?.val ?? 0) + (l2?.val ?? 0)
+        let carry = sum >= 10 ? 1 : 0
+        let value = sum >= 10 ? (sum - 10) : sum
         
+        return r
     }
 }
