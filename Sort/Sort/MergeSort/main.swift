@@ -8,8 +8,6 @@
 
 import Foundation
 //O(n log n)
-
-
 func merge<T: Comparable>(left: [T], right: [T]) -> [T] {
     // 1
     var leftIndex = 0
@@ -47,3 +45,15 @@ func merge<T: Comparable>(left: [T], right: [T]) -> [T] {
     return orderedPile
 }
 
+
+func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
+    guard array.count > 1 else { return array }
+    let midIndex = array.count / 2
+    let leftArray = mergeSort(Array(array[0..<midIndex]))
+    let rightArray = mergeSort(Array(array[midIndex..<array.count]))
+    return merge(left: leftArray, right: rightArray)
+}
+
+let a = [1, 5, -10, 7, 3, 2]
+let r = mergeSort(a)
+print(r)
