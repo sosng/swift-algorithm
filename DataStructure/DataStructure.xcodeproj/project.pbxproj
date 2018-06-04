@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A317719720BFE7AB00A1FD0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317719620BFE7AB00A1FD0D /* main.swift */; };
+		A31771A220C50C4A00A1FD0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771A120C50C4A00A1FD0D /* main.swift */; };
+		A31771AD20C5155100A1FD0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771AC20C5155100A1FD0D /* main.swift */; };
+		A31771B220C51DC200A1FD0D /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771B120C51DC200A1FD0D /* Edge.swift */; };
+		A31771B420C51DDE00A1FD0D /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771B320C51DDE00A1FD0D /* Vertex.swift */; };
+		A31771B620C51E0D00A1FD0D /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771B520C51E0D00A1FD0D /* Graphable.swift */; };
+		A31771B820C51E3800A1FD0D /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31771B720C51E3800A1FD0D /* AdjacencyList.swift */; };
 		A3209DA1209AAA75001EF56B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3209DA0209AAA75001EF56B /* Stack.swift */; };
 		A3209DAC209AAE3E001EF56B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3209DAB209AAE3E001EF56B /* main.swift */; };
 		A3209DB1209AB0A5001EF56B /* OptimalQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3209DB0209AB0A5001EF56B /* OptimalQueue.swift */; };
@@ -24,6 +30,24 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A317719220BFE7AB00A1FD0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A317719D20C50C4A00A1FD0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A31771A820C5155100A1FD0D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -109,6 +133,14 @@
 /* Begin PBXFileReference section */
 		A317719420BFE7AB00A1FD0D /* HashTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashTable; sourceTree = BUILT_PRODUCTS_DIR; };
 		A317719620BFE7AB00A1FD0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A317719F20C50C4A00A1FD0D /* BloomFilter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BloomFilter; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31771A120C50C4A00A1FD0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A31771AA20C5155100A1FD0D /* Graph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Graph; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31771AC20C5155100A1FD0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A31771B120C51DC200A1FD0D /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		A31771B320C51DDE00A1FD0D /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		A31771B520C51E0D00A1FD0D /* Graphable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		A31771B720C51E3800A1FD0D /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		A3209D90209AAA4C001EF56B /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3209D9E209AAA74001EF56B /* Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stack; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3209DA0209AAA75001EF56B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -131,6 +163,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		A317719120BFE7AB00A1FD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A317719C20C50C4A00A1FD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31771A720C5155100A1FD0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,6 +250,26 @@
 			path = HashTable;
 			sourceTree = "<group>";
 		};
+		A31771A020C50C4A00A1FD0D /* BloomFilter */ = {
+			isa = PBXGroup;
+			children = (
+				A31771A120C50C4A00A1FD0D /* main.swift */,
+			);
+			path = BloomFilter;
+			sourceTree = "<group>";
+		};
+		A31771AB20C5155100A1FD0D /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				A31771AC20C5155100A1FD0D /* main.swift */,
+				A31771B120C51DC200A1FD0D /* Edge.swift */,
+				A31771B320C51DDE00A1FD0D /* Vertex.swift */,
+				A31771B520C51E0D00A1FD0D /* Graphable.swift */,
+				A31771B720C51E3800A1FD0D /* AdjacencyList.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		A3209D87209AAA4C001EF56B = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +281,8 @@
 				D24BE301209B603C0053B3E4 /* BinaryTree */,
 				A3209DC3209C03F6001EF56B /* BST */,
 				A317719520BFE7AB00A1FD0D /* HashTable */,
+				A31771A020C50C4A00A1FD0D /* BloomFilter */,
+				A31771AB20C5155100A1FD0D /* Graph */,
 				A3209D91209AAA4C001EF56B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +299,8 @@
 				D24BE300209B603C0053B3E4 /* BinaryTree */,
 				A3209DC2209C03F6001EF56B /* BST */,
 				A317719420BFE7AB00A1FD0D /* HashTable */,
+				A317719F20C50C4A00A1FD0D /* BloomFilter */,
+				A31771AA20C5155100A1FD0D /* Graph */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +382,40 @@
 			name = HashTable;
 			productName = HashTable;
 			productReference = A317719420BFE7AB00A1FD0D /* HashTable */;
+			productType = "com.apple.product-type.tool";
+		};
+		A317719E20C50C4A00A1FD0D /* BloomFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31771A320C50C4A00A1FD0D /* Build configuration list for PBXNativeTarget "BloomFilter" */;
+			buildPhases = (
+				A317719B20C50C4A00A1FD0D /* Sources */,
+				A317719C20C50C4A00A1FD0D /* Frameworks */,
+				A317719D20C50C4A00A1FD0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloomFilter;
+			productName = BloomFilter;
+			productReference = A317719F20C50C4A00A1FD0D /* BloomFilter */;
+			productType = "com.apple.product-type.tool";
+		};
+		A31771A920C5155100A1FD0D /* Graph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31771AE20C5155100A1FD0D /* Build configuration list for PBXNativeTarget "Graph" */;
+			buildPhases = (
+				A31771A620C5155100A1FD0D /* Sources */,
+				A31771A720C5155100A1FD0D /* Frameworks */,
+				A31771A820C5155100A1FD0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graph;
+			productName = Graph;
+			productReference = A31771AA20C5155100A1FD0D /* Graph */;
 			productType = "com.apple.product-type.tool";
 		};
 		A3209D8F209AAA4C001EF56B /* Algorithm */ = {
@@ -463,6 +567,12 @@
 					A317719320BFE7AB00A1FD0D = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					A317719E20C50C4A00A1FD0D = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					A31771A920C5155100A1FD0D = {
+						CreatedOnToolsVersion = 9.4;
+					};
 					A3209D8F209AAA4C001EF56B = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
@@ -511,6 +621,8 @@
 				D24BE2FF209B603C0053B3E4 /* BinaryTree */,
 				A3209DC1209C03F6001EF56B /* BST */,
 				A317719320BFE7AB00A1FD0D /* HashTable */,
+				A317719E20C50C4A00A1FD0D /* BloomFilter */,
+				A31771A920C5155100A1FD0D /* Graph */,
 			);
 		};
 /* End PBXProject section */
@@ -521,6 +633,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A317719720BFE7AB00A1FD0D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A317719B20C50C4A00A1FD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31771A220C50C4A00A1FD0D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31771A620C5155100A1FD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31771B620C51E0D00A1FD0D /* Graphable.swift in Sources */,
+				A31771B220C51DC200A1FD0D /* Edge.swift in Sources */,
+				A31771AD20C5155100A1FD0D /* main.swift in Sources */,
+				A31771B820C51E3800A1FD0D /* AdjacencyList.swift in Sources */,
+				A31771B420C51DDE00A1FD0D /* Vertex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +738,46 @@
 			name = Debug;
 		};
 		A317719920BFE7AB00A1FD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A31771A420C50C4A00A1FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A31771A520C50C4A00A1FD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A31771AF20C5155100A1FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A31771B020C5155100A1FD0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -909,6 +1081,24 @@
 			buildConfigurations = (
 				A317719820BFE7AB00A1FD0D /* Debug */,
 				A317719920BFE7AB00A1FD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31771A320C50C4A00A1FD0D /* Build configuration list for PBXNativeTarget "BloomFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31771A420C50C4A00A1FD0D /* Debug */,
+				A31771A520C50C4A00A1FD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31771AE20C5155100A1FD0D /* Build configuration list for PBXNativeTarget "Graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31771AF20C5155100A1FD0D /* Debug */,
+				A31771B020C5155100A1FD0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
