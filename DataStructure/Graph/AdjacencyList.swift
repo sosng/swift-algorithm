@@ -30,7 +30,19 @@ extension AdjacencyList: Graphable {
     public typealias Element = T
 
     var description: CustomStringConvertible {
-        <#code#>
+        var result = ""
+        for (vertex, edges) in adjacencyDict {
+            var edgeString = ""
+            for (index, edge) in edges.enumerated() {
+                if index != edges.count - 1 {
+                    edgeString.append("\(edge.to),")
+                } else {
+                    edgeString.append("\(edge.to)")
+                }
+            }
+            result.append("\(vertex) --> [\(edgeString)] \n")
+        }
+        return result
     }
     
     func createVertex(data: T) -> Vertex<T> {
