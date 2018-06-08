@@ -10,6 +10,9 @@
 		A3E386BE20C9087700E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386BD20C9087700E22BC8 /* main.swift */; };
 		A3E386CB20C908F400E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386CA20C908F400E22BC8 /* main.swift */; };
 		A3E386D620C91F2E00E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386D520C91F2E00E22BC8 /* main.swift */; };
+		A3E386E120CA50BC00E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386E020CA50BC00E22BC8 /* main.swift */; };
+		A3E386ED20CA6A2100E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386EC20CA6A2100E22BC8 /* main.swift */; };
+		A3E386F820CA807800E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386F720CA807800E22BC8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A3E386DC20CA50BC00E22BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A3E386E820CA6A2100E22BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A3E386F320CA807800E22BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +79,12 @@
 		A3E386CA20C908F400E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A3E386D320C91F2E00E22BC8 /* 02AddTwoNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 02AddTwoNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E386D520C91F2E00E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A3E386DE20CA50BC00E22BC8 /* 15ThreeSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 15ThreeSum; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E386E020CA50BC00E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A3E386EA20CA6A2100E22BC8 /* 75SortColors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 75SortColors; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E386EC20CA6A2100E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A3E386F520CA807800E22BC8 /* 70ClimbingStairs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 70ClimbingStairs; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E386F720CA807800E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +109,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E386DB20CA50BC00E22BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E386E720CA6A2100E22BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E386F220CA807800E22BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +139,9 @@
 				A3E386BC20C9087700E22BC8 /* LeetCode */,
 				A3E386C920C908F400E22BC8 /* 88MergeSortedArray */,
 				A3E386D420C91F2E00E22BC8 /* 02AddTwoNumbers */,
+				A3E386DF20CA50BC00E22BC8 /* 15ThreeSum */,
+				A3E386EB20CA6A2100E22BC8 /* 75SortColors */,
+				A3E386F620CA807800E22BC8 /* 70ClimbingStairs */,
 				A3E386BB20C9087700E22BC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +152,9 @@
 				A3E386BA20C9087700E22BC8 /* LeetCode */,
 				A3E386C820C908F400E22BC8 /* 88MergeSortedArray */,
 				A3E386D320C91F2E00E22BC8 /* 02AddTwoNumbers */,
+				A3E386DE20CA50BC00E22BC8 /* 15ThreeSum */,
+				A3E386EA20CA6A2100E22BC8 /* 75SortColors */,
+				A3E386F520CA807800E22BC8 /* 70ClimbingStairs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +181,30 @@
 				A3E386D520C91F2E00E22BC8 /* main.swift */,
 			);
 			path = 02AddTwoNumbers;
+			sourceTree = "<group>";
+		};
+		A3E386DF20CA50BC00E22BC8 /* 15ThreeSum */ = {
+			isa = PBXGroup;
+			children = (
+				A3E386E020CA50BC00E22BC8 /* main.swift */,
+			);
+			path = 15ThreeSum;
+			sourceTree = "<group>";
+		};
+		A3E386EB20CA6A2100E22BC8 /* 75SortColors */ = {
+			isa = PBXGroup;
+			children = (
+				A3E386EC20CA6A2100E22BC8 /* main.swift */,
+			);
+			path = 75SortColors;
+			sourceTree = "<group>";
+		};
+		A3E386F620CA807800E22BC8 /* 70ClimbingStairs */ = {
+			isa = PBXGroup;
+			children = (
+				A3E386F720CA807800E22BC8 /* main.swift */,
+			);
+			path = 70ClimbingStairs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +261,57 @@
 			productReference = A3E386D320C91F2E00E22BC8 /* 02AddTwoNumbers */;
 			productType = "com.apple.product-type.tool";
 		};
+		A3E386DD20CA50BC00E22BC8 /* 15ThreeSum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E386E420CA50BC00E22BC8 /* Build configuration list for PBXNativeTarget "15ThreeSum" */;
+			buildPhases = (
+				A3E386DA20CA50BC00E22BC8 /* Sources */,
+				A3E386DB20CA50BC00E22BC8 /* Frameworks */,
+				A3E386DC20CA50BC00E22BC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 15ThreeSum;
+			productName = 15ThreeSum;
+			productReference = A3E386DE20CA50BC00E22BC8 /* 15ThreeSum */;
+			productType = "com.apple.product-type.tool";
+		};
+		A3E386E920CA6A2100E22BC8 /* 75SortColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E386EE20CA6A2100E22BC8 /* Build configuration list for PBXNativeTarget "75SortColors" */;
+			buildPhases = (
+				A3E386E620CA6A2100E22BC8 /* Sources */,
+				A3E386E720CA6A2100E22BC8 /* Frameworks */,
+				A3E386E820CA6A2100E22BC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 75SortColors;
+			productName = 75SortColors;
+			productReference = A3E386EA20CA6A2100E22BC8 /* 75SortColors */;
+			productType = "com.apple.product-type.tool";
+		};
+		A3E386F420CA807800E22BC8 /* 70ClimbingStairs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E386F920CA807800E22BC8 /* Build configuration list for PBXNativeTarget "70ClimbingStairs" */;
+			buildPhases = (
+				A3E386F120CA807800E22BC8 /* Sources */,
+				A3E386F220CA807800E22BC8 /* Frameworks */,
+				A3E386F320CA807800E22BC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 70ClimbingStairs;
+			productName = 70ClimbingStairs;
+			productReference = A3E386F520CA807800E22BC8 /* 70ClimbingStairs */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +331,15 @@
 					A3E386D220C91F2E00E22BC8 = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					A3E386DD20CA50BC00E22BC8 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					A3E386E920CA6A2100E22BC8 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					A3E386F420CA807800E22BC8 = {
+						CreatedOnToolsVersion = 9.4;
+					};
 				};
 			};
 			buildConfigurationList = A3E386B520C9087700E22BC8 /* Build configuration list for PBXProject "LeetCode" */;
@@ -210,6 +357,9 @@
 				A3E386B920C9087700E22BC8 /* LeetCode */,
 				A3E386C720C908F400E22BC8 /* 88MergeSortedArray */,
 				A3E386D220C91F2E00E22BC8 /* 02AddTwoNumbers */,
+				A3E386DD20CA50BC00E22BC8 /* 15ThreeSum */,
+				A3E386E920CA6A2100E22BC8 /* 75SortColors */,
+				A3E386F420CA807800E22BC8 /* 70ClimbingStairs */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +386,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E386D620C91F2E00E22BC8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E386DA20CA50BC00E22BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E386E120CA50BC00E22BC8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E386E620CA6A2100E22BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E386ED20CA6A2100E22BC8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E386F120CA807800E22BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E386F820CA807800E22BC8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +589,66 @@
 			};
 			name = Release;
 		};
+		A3E386E220CA50BC00E22BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A3E386E320CA50BC00E22BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A3E386EF20CA6A2100E22BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A3E386F020CA6A2100E22BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A3E386FA20CA807800E22BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A3E386FB20CA807800E22BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +684,33 @@
 			buildConfigurations = (
 				A3E386D820C91F2E00E22BC8 /* Debug */,
 				A3E386D920C91F2E00E22BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E386E420CA50BC00E22BC8 /* Build configuration list for PBXNativeTarget "15ThreeSum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E386E220CA50BC00E22BC8 /* Debug */,
+				A3E386E320CA50BC00E22BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E386EE20CA6A2100E22BC8 /* Build configuration list for PBXNativeTarget "75SortColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E386EF20CA6A2100E22BC8 /* Debug */,
+				A3E386F020CA6A2100E22BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E386F920CA807800E22BC8 /* Build configuration list for PBXNativeTarget "70ClimbingStairs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E386FA20CA807800E22BC8 /* Debug */,
+				A3E386FB20CA807800E22BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

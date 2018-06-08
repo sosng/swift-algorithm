@@ -34,50 +34,26 @@ extension ListNode: CustomStringConvertible {
 class Solution {
     class func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         
-        let sum = (l1?.val ?? 0) + (l2?.val ?? 0)
-        var carry = sum / 10
-        var reminder = sum % 10
-        var result = ListNode(reminder)
+        let result = ListNode(0)
         var temp = result
+        var carry = 0
+        var reminder = 0
 
-        var i1 = l1?.next
-        var i2 = l2?.next
+        var i1 = l1
+        var i2 = l2
         while i1 != nil, i2 != nil {
-            let sum = (i1?.val ?? 0) + (i2?.val ?? 0) + carry * 10
+            let sum = (i1?.val ?? 0) + (i2?.val ?? 0) + carry
             carry = sum / 10
             reminder = sum % 10
 
             temp.next = ListNode(reminder)
             temp = temp.next!
+
             i1 = i1?.next
             i2 = i2?.next
         }
 
         return result.next
-//        var carry = 0, sum = 0, l1 = l1, l2 = l2
-//        var dummy = ListNode(0)
-//        var node = dummy
-//
-//        while l1 != nil || l2 != nil || carry != 0 {
-//            sum = carry
-//
-//            if l1 != nil {
-//                sum += l1!.val
-//                l1 = l1!.next
-//            }
-//            if l2 != nil {
-//                sum += l2!.val
-//                l2 = l2!.next
-//            }
-//
-//            carry = sum / 10
-//
-//            node.next = ListNode(sum % 10)
-//            node = node.next!
-//        }
-//
-//        return dummy.next
-//
     }
 }
 
