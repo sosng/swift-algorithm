@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A335ABD52147C25C0055857C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335ABD42147C25C0055857C /* main.swift */; };
 		A3E386BE20C9087700E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386BD20C9087700E22BC8 /* main.swift */; };
 		A3E386CB20C908F400E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386CA20C908F400E22BC8 /* main.swift */; };
 		A3E386D620C91F2E00E22BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E386D520C91F2E00E22BC8 /* main.swift */; };
@@ -16,6 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A335ABD02147C25C0055857C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A3E386B820C9087700E22BC8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +83,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A335ABD22147C25C0055857C /* 206ReverseLinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 206ReverseLinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
+		A335ABD42147C25C0055857C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A3E386BA20C9087700E22BC8 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E386BD20C9087700E22BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A3E386C820C908F400E22BC8 /* 88MergeSortedArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 88MergeSortedArray; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +100,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A335ABCF2147C25C0055857C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E386B720C9087700E22BC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +152,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A335ABD32147C25C0055857C /* 206ReverseLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A335ABD42147C25C0055857C /* main.swift */,
+			);
+			path = 206ReverseLinkedList;
+			sourceTree = "<group>";
+		};
 		A3E386B120C9087700E22BC8 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +169,7 @@
 				A3E386DF20CA50BC00E22BC8 /* 15ThreeSum */,
 				A3E386EB20CA6A2100E22BC8 /* 75SortColors */,
 				A3E386F620CA807800E22BC8 /* 70ClimbingStairs */,
+				A335ABD32147C25C0055857C /* 206ReverseLinkedList */,
 				A3E386BB20C9087700E22BC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +183,7 @@
 				A3E386DE20CA50BC00E22BC8 /* 15ThreeSum */,
 				A3E386EA20CA6A2100E22BC8 /* 75SortColors */,
 				A3E386F520CA807800E22BC8 /* 70ClimbingStairs */,
+				A335ABD22147C25C0055857C /* 206ReverseLinkedList */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +239,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A335ABD12147C25C0055857C /* 206ReverseLinkedList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A335ABD82147C25C0055857C /* Build configuration list for PBXNativeTarget "206ReverseLinkedList" */;
+			buildPhases = (
+				A335ABCE2147C25C0055857C /* Sources */,
+				A335ABCF2147C25C0055857C /* Frameworks */,
+				A335ABD02147C25C0055857C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 206ReverseLinkedList;
+			productName = 206ReverseLinkedList;
+			productReference = A335ABD22147C25C0055857C /* 206ReverseLinkedList */;
+			productType = "com.apple.product-type.tool";
+		};
 		A3E386B920C9087700E22BC8 /* LeetCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3E386C120C9087700E22BC8 /* Build configuration list for PBXNativeTarget "LeetCode" */;
@@ -322,6 +368,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Shuang.Song;
 				TargetAttributes = {
+					A335ABD12147C25C0055857C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					A3E386B920C9087700E22BC8 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -360,11 +409,20 @@
 				A3E386DD20CA50BC00E22BC8 /* 15ThreeSum */,
 				A3E386E920CA6A2100E22BC8 /* 75SortColors */,
 				A3E386F420CA807800E22BC8 /* 70ClimbingStairs */,
+				A335ABD12147C25C0055857C /* 206ReverseLinkedList */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A335ABCE2147C25C0055857C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335ABD52147C25C0055857C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3E386B620C9087700E22BC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +474,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A335ABD62147C25C0055857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A335ABD72147C25C0055857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQBJWQ2AMG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		A3E386BF20C9087700E22BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -652,6 +730,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A335ABD82147C25C0055857C /* Build configuration list for PBXNativeTarget "206ReverseLinkedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A335ABD62147C25C0055857C /* Debug */,
+				A335ABD72147C25C0055857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3E386B520C9087700E22BC8 /* Build configuration list for PBXProject "LeetCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
