@@ -35,25 +35,25 @@ Explanation: There are three ways to climb to the top.
 
 class Solution {
     func climbStairs(_ n: Int) -> Int {
-//        var result = Array(repeating: 0, count: n)
-//        result[0] = 1
-//        if n >= 2 {
-//            result[1] = 2
-//            for i in 2..<n {
-//                result[i] = result[i - 1] + result[i - 2]
-//            }
-//        }
-//
-//        return result[n - 1]
-        if n == 0 || n == 1 {
-            return 1
-        } else {
-            return climbStairs(n - 1) + climbStairs(n - 2)
+        var result = Array(repeating: 0, count: n)
+        result[0] = 1
+        if n >= 2 {
+            result[1] = 2
+            for i in 2..<n {
+                result[i] = result[i - 1] + result[i - 2]
+            }
         }
+
+        return result[n - 1]
+//        if n == 0 || n == 1 {
+//            return 1
+//        } else {
+//            return climbStairs(n - 1) + climbStairs(n - 2)
+//        }
     }
     
     
 }
 
-let r = Solution().climbStairs(1)
+let r = Solution().climbStairs(100)
 print(r)
